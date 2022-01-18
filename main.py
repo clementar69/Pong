@@ -53,12 +53,6 @@ def run():
     for b in core.memory("TableauDeBalle"):
         pygame.draw.circle(core.screen, b.couleur, b.position ,b.rayon)
 
-    if core.getKeyPressList("z"):
-        core.memory("direction", Vector2(core.memory("direction").x, -1))
-
-    if core.getKeyPressList("s"):
-        core.memory("direction", Vector2(core.memory("direction").x, 1))
-
 
 
 
